@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+    <body class="mx-auto container">
+        <%- include("./partials/nav.ejs") %>
+            <div class=" mx-8 p-5 flex items-center justify-center w-full">
+                <form method="POST" action="/blogs"
+                    class="flex flex-col flex items-center justify-center space-y-9 max-w-lg w-full">
+                    <input name="title" placeholder="Enter a title for your blog"
+                        class="h-16 p-3 w-full border rounded-xl" />
+                    <input name="snippet" placeholder="Enter a snippet for your blog"
+                        class="h-16 p-3 w-full border rounded-xl" />
+                    <input name="body" placeholder="Enter your blog content"
+                        class="h-16 p-3 w-full border rounded-xl" />
+                    <button class="text-base font-medium bg-red-500 text-white rounded-lg h-14 w-full rounded-xl ">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>

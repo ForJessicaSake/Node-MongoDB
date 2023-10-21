@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body class="mx-auto container">
+    <%- include("./partials/nav.ejs") %>
+
+            <% if(result.length> 0){ %>
+                <% result.forEach((blog)=>{ %>
+                    <div class="px-10 py-5 space-y-2 cursor-pointer">
+                        <a href="/blog/<%= blog._id %>">
+                        <h3 class="text-2xl font-semibold">
+                            <%= blog.title %>
+                        </h3>
+                        <p class="text-lg font-light">
+                            <%= blog.snippet %>
+                        </p>
+                        </a>
+                    </div>
+                    <% })%>
+                <% }%>
+        <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>
