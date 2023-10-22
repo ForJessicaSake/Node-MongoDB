@@ -28,7 +28,7 @@ const get_blog_by_id = (req, res) => {
     .then((result) => {
       res.render("blog/details", { blog: result });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => res.render("404/404"));
 };
 const delete_blog = (req, res) => {
   const id = req.params.id;

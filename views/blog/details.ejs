@@ -7,13 +7,13 @@
             <div class="py-5 space-y-2 shadow-sm mx-8 p-7 rounded-xl flex justify-between items-center">
                 <div>
                     <h3 class="text-2xl font-semibold">
-                        <%= blog.title %>
+                        <%= blog?.title %>
                     </h3>
                     <p class="text-lg font-light max-w-xl">
-                        <%= blog.body %>
+                        <%= blog?.body %>
                     </p>
                 </div>
-                <button class="text-sm font-medium bg-red-500 text-white rounded-lg p-3 delete" data-doc=<%=blog._id %>>
+                <button class="text-sm font-medium bg-red-500 text-white rounded-lg p-3 delete" data-doc=<%=blog?._id %>>
                     DELETE
                 </button>
             </div>
