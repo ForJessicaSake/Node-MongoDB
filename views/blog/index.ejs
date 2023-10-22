@@ -6,9 +6,9 @@
     <%- include("../partials/nav.ejs") %>
 
             <% if(result.length> 0){ %>
-                <% result.forEach((blog)=>{ %>
-                    <div class="px-10 py-5 space-y-2 cursor-pointer">
-                        <a href="/blog/<%= blog._id %>">
+                <% result.map((blog)=>{ %>
+                    <div class="m-10 shadow-md p-5 cursor-pointer rounded-xl">
+                        <a href="/blog/<%= blog._id %>" class="">
                         <h3 class="text-2xl font-semibold">
                             <%= blog.title %>
                         </h3>
