@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+<%- include("../partials/head.ejs") %>
 
 <body class="mx-auto container">
-    <%- include("./partials/nav.ejs") %>
+    <%- include("../partials/nav.ejs") %>
 
             <% if(result.length> 0){ %>
                 <% result.forEach((blog)=>{ %>
@@ -19,7 +19,7 @@
                     </div>
                     <% })%>
                 <% }%>
-        <%- include("./partials/footer.ejs") %>
+        <%- include("../partials/footer.ejs") %>
     </body>
 
 </html>
